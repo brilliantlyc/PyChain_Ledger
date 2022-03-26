@@ -118,7 +118,7 @@ class PyChain:
 
             calculated_hash = block.hash_block()
 
-        print("Wining Hash", calculated_hash)
+        print("Winning Hash", calculated_hash)
         return block
 
     def add_block(self, candidate_block):
@@ -167,23 +167,24 @@ pychain = setup()
 # 2. Add an input area where you can get a value for `sender` from the user.
 # 3. Add an input area where you can get a value for `receiver` from the user.
 # 4. Add an input area where you can get a value for `amount` from the user.
-# 5. As part of the Add Block button functionality, update `new_block` so that `Block` consists of an attribute named `record`, which is set equal to a `Record` that contains the `sender`, `receiver`, and `amount` values. The updated `Block`should also include the attributes for `creator_id` and `prev_hash`.
+# 5. As part of the Add Block button functionality, update `new_block` so that `Block` consists of an attribute named `record`, 
+# which is set equal to a `Record` that contains the `sender`, `receiver`, and `amount` values. 
+# The updated `Block`should also include the attributes for `creator_id` and `prev_hash`.
 
 # @TODO:
 # Delete the `input_data` variable from the Streamlit interface.
-input_data = st.text_input("Block Data")
 
 # @TODO:
 # Add an input area where you can get a value for `sender` from the user.
-# YOUR CODE HERE
+input_sender = st.text_input("Sender")
 
 # @TODO:
 # Add an input area where you can get a value for `receiver` from the user.
-# YOUR CODE HERE
+input_receiver = st.text_input("Receiver")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-# YOUR CODE HERE
+input_amount = st.text_input("Amount")
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
@@ -194,7 +195,7 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
-        data=input_data,
+        record=Record(sender=input_sender, receiver=input_receiver, amount=input_amount),
         creator_id=42,
         prev_hash=prev_block_hash
     )
