@@ -13,17 +13,17 @@ Upon running the streamlit application, the users are presented with a screen th
 
 The PyChain ledger that is displayed is a pandas DataFrame consisting of the (transaction) record, creator_id, prev_hash, timestamp, and nonce of each block, shown as a row in the DataFrame. As a block is added, the PyChain ledger is updated. The record column shows the sender, receiver, and amount that was entered in the input textboxes.
 
-![pychain_streamlit_ledger_3](Images/pychain_streamlit_ledger_3.png)
+![pychain_streamlit_ledger_2](Images/pychain_streamlit_ledger_2.png)
 
 **Block Inpector:**
 
 In addition to being able to hover over a record or prev_hash in the PyChain ledger in order to see the complete information, there is also a "Block Inspector" selectbox in the sidebar that allows the user to look at the details of any block from the PyChain blockchain. Once the user selects a block from the selectbox list, the block details are displayed.
 
-![Block_Inspector](Images/Block_Inspector.png)
+![pychain_streamlit_block_inspector](Images/pychain_streamlit_block_inspector.png)
 
 **Validate Chain:**
 
 Lastly, the user can click on the "Validate Chain" button to validate the the PyChain blockchain ledger. If the PyChain is valid, "True" will be displayed on the screen.
 
-![pychain_streamlit_validation_3](Images/pychain_streamlit_validation_3.png)
+![pychain_streamlit_validation_2](Images/pychain_streamlit_validation_2.png)
 
