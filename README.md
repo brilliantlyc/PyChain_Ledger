@@ -1,7 +1,3 @@
-
-
-https://user-images.githubusercontent.com/92467545/160748898-555d0215-5e5c-44dd-bc15-c3c2611c5398.mp4
-
 # PyChain Ledger
 This prototype Streamlit application consists of a blockchain-based ledger system that allows the conduction of financial transactions through a user-friendly web interface. More specifically, it allows the transfer of money between senders and receivers, and verifies the validity of the data in the ledger.
 
@@ -29,7 +25,10 @@ In addition to being able to hover over a record or prev_hash in the PyChain led
 
 Lastly, the user can click on the "Validate Chain" button to validate the the PyChain blockchain ledger. If the PyChain is valid, "True" will be displayed on the screen.
 
+![pychain_streamlit_validation_2](Images/pychain_streamlit_validation_2.png)
+
 Following is a demo video of the PyChain Ledger: 
 
-![pychain_streamlit_validation_2](Images/pychain_streamlit_validation_2.png)
+https://user-images.githubusercontent.com/92467545/160748898-555d0215-5e5c-44dd-bc15-c3c2611c5398.mp4
+
 
